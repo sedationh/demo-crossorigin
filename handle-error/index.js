@@ -12,4 +12,6 @@ window.onerror = function (message, source, line, column, error) {
   })
 }
 
-throw new Error("handle error")
+setTimeout(() => {
+  throw new Error("handle error")
+}, 200)
